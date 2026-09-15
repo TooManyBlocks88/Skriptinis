@@ -38,6 +38,6 @@ maziausia = min(s_filtr)
 
 
 % Papildoma 14 variantas
-A = input('Iveskite vektoriu A is 10 elementu nuo 1,1 iki 1,10:');
+A = input('Iveskite vektoriu A is 10 elementu nuo 1,1 iki 1,10: ');
 B = [A(end:-1:6) A(1:5)];
 disp(['vektorius B yra: ', num2str(B)])
