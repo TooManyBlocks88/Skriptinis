@@ -1,6 +1,7 @@
 % Bernardas Petraska
 % EEf-25/2
 % 2026-09-15
+% 13 variantas
 
 v1 = 10:-1:-15;
 v2 = log2(v);
@@ -34,3 +35,9 @@ dydis = size(s)
 dydis_virs = size(s_virs)
 didziausia = max(s_filtr)
 maziausia = min(s_filtr)
+
+
+% Papildoma 14 variantas
+A = input('Iveskite vektoriu A is 10 elementu nuo 1,1 iki 1,10:');
+B = [A(end:-1:6) A(1:5)];
+disp(['vektorius B yra: ', num2str(B)])
