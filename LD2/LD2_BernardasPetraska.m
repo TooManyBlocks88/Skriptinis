@@ -4,7 +4,7 @@
 % 13 variantas
 
 v1 = 10:-1:-15;
-v2 = log2(v);
+v2 = log2(v1);
 ats = v1 ./ v2;
 disp(ats)
 
