@@ -66,9 +66,6 @@ s_virs = s(s > U1);
 s_filtr = s;
 s_filtr(abs(s_filtr) < U2) = 0;
 
-didziausia = max(s_filtr);
-maziausia = min(s_filtr);
-
 % Uzduotis
 
 figure
@@ -84,7 +81,22 @@ ylabel('Signalas')
 legend('s pradinis','s filtruotas','U1','U2','Location','northeast')
 title('Pradinis ir filtruotas signalai su ribomis')
 
+t_virs = t(s > U1);
+[max_y, max_x] = max(s_virs);
+[min_y, min_x] = min(s_virs);
+
 figure
-plot(t, s_virs, '-', 'LineWidth',2)
+stem(t_virs,s_virs, 'LineWidth',2)
+hold on
+
+plot(t_virs(max_x), max_y, 'o', 'MarkerFaceColor','g','MarkerEdgeColor','g','MarkerSize',9)
+plot(t_virs(min_x), min_y, 'o', 'MarkerFaceColor','r','MarkerEdgeColor','r','MarkerSize',9)
+
+hold off
+grid on
+xlabel('t')
+ylabel('s_{virs}')
+title("Signalo reiksmes virs U1")
+legend('s_{virs}','Maks. reiksme','Min. reiksme','Location','northeast')
 %nepavyko
 
