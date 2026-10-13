@@ -1,0 +1,7 @@
+function varargout = specfunkc(varargin)
+% Bla bla bla
+
+if nargin == 1
+    varargout{1} = varargin{1}.^2;
+elseif nargin == 2
+    a = 

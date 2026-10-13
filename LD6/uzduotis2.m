@@ -1,0 +1,10 @@
+clear global;
+global x y
+x = 0:0.1:2*pi;
+sinpluscos
+plot(x, y, 'k-.+')
+
+xlabel("x")
+ylabel("sin(x)+cos(x)")
+title("Sinusu ir kosinusu sumos grafikas")
+grid on
